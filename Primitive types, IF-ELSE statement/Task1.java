@@ -5,16 +5,16 @@ public class Task1 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Âúâåäåòå À:");
+		System.out.println("Ğ’ÑŠĞ²ĞµĞ´ĞµÑ‚Ğµ Ğ:");
 		double num1 = sc.nextDouble();
-		System.out.println("Âúâåäåòå B:");
+		System.out.println("Ğ’ÑŠĞ²ĞµĞ´ĞµÑ‚Ğµ B:");
 		double num2 = sc.nextDouble();
-		System.out.println("Âúâåäåòå C:");
+		System.out.println("Ğ’ÑŠĞ²ĞµĞ´ĞµÑ‚Ğµ C:");
 		double num3 = sc.nextDouble();
 		if (num3 > num1 && num3 < num2) {
-			System.out.printf("×èñëîòî %.1f å ìåæäó %.1f è %.1f", num3, num1, num2);
+			System.out.printf("Ğ§Ğ¸ÑĞ»Ğ¾Ñ‚Ğ¾ %.1f Ğµ Ğ¼ĞµĞ¶Ğ´Ñƒ %.1f Ğ¸ %.1f", num3, num1, num2);
 		} else {
-			System.out.printf("×èñëîòî %.1f íå å ìåæäó %.1f è %.1f", num3, num1, num2);
+			System.out.printf("Ğ§Ğ¸ÑĞ»Ğ¾Ñ‚Ğ¾ %.1f Ğ½Ğµ Ğµ Ğ¼ĞµĞ¶Ğ´Ñƒ %.1f Ğ¸ %.1f", num3, num1, num2);
 		}		
 	}
 }

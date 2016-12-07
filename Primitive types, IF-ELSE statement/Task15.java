@@ -1,20 +1,20 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 
 public class Task15 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Въведете час в интервал[0..24]:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ С‡Р°СЃ РІ РёРЅС‚РµСЂРІР°Р»[0..24]:");
 		byte hour = sc.nextByte();
 		if (hour < 0 || hour > 24) {
-			System.out.println("Въведеният час е извън този интервал!");
+			System.out.println("Р’СЉРІРµРґРµРЅРёСЏС‚ С‡Р°СЃ Рµ РёР·РІСЉРЅ С‚РѕР·Рё РёРЅС‚РµСЂРІР°Р»!");
 		} else {
 			if ((hour >= 18 && hour <= 24) || (hour >= 0 && hour < 4)) {
-				System.out.println("Добър вечер");
+				System.out.println("Р”РѕР±СЉСЂ РІРµС‡РµСЂ");
 			} else if (hour >= 4 && hour < 9) {
-				System.out.println("Добро утро");
+				System.out.println("Р”РѕР±СЂРѕ СѓС‚СЂРѕ");
 			} else {
-				System.out.println("Добър ден");
+				System.out.println("Р”РѕР±СЉСЂ РґРµРЅ");
 			}
 		}
 	}

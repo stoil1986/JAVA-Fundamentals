@@ -1,26 +1,26 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 
 public class Task16 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Въведете трицифрено число:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ С‚СЂРёС†РёС„СЂРµРЅРѕ С‡РёСЃР»Рѕ:");
 		int num = sc.nextInt();
 		if (num < 100 || num > 999) {
-			System.out.println("Въведеното число не е с 3 цифри.");
+			System.out.println("Р’СЉРІРµРґРµРЅРѕС‚Рѕ С‡РёСЃР»Рѕ РЅРµ Рµ СЃ 3 С†РёС„СЂРё.");
 		} else {
 			int digit1 = num / 100;
 			int digit2 = (num / 10) % 10;
 			int digit3 = num % 10;
 			
 			if (digit1 == digit2 && digit2 == digit3) {
-				System.out.println("Цифрите са равни");
+				System.out.println("Р¦РёС„СЂРёС‚Рµ СЃР° СЂР°РІРЅРё");
 			}else if (digit1 > digit2 && digit2 > digit3) {
-				System.out.println("Цифрите са в низходящ ред");
+				System.out.println("Р¦РёС„СЂРёС‚Рµ СЃР° РІ РЅРёР·С…РѕРґСЏС‰ СЂРµРґ");
 			}else if (digit1 < digit2 && digit2 < digit3) {
-				System.out.println("Цифрите са във възходящ ред");
+				System.out.println("Р¦РёС„СЂРёС‚Рµ СЃР° РІСЉРІ РІСЉР·С…РѕРґСЏС‰ СЂРµРґ");
 			}else {
-				System.out.println("Цифрите са ненаредени");
+				System.out.println("Р¦РёС„СЂРёС‚Рµ СЃР° РЅРµРЅР°СЂРµРґРµРЅРё");
 			}
 		}
 	}

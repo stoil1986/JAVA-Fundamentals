@@ -4,11 +4,11 @@ public class Task12 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Въведете ден:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ РґРµРЅ:");
 		int day = sc.nextInt();
-		System.out.println("Въведете месец:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ РјРµСЃРµС†:");
 		int month = sc.nextInt();
-		System.out.println("Въведете година:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ РіРѕРґРёРЅР°:");
 		int year = sc.nextInt();
 
 		boolean leapYear = (year % 4 == 0 && (year % 400 == 0 || year % 100 != 0));
@@ -67,10 +67,10 @@ public class Task12 {
 			day++;
 		}
 		if (correctData) {
-			System.out.println("Следващата дата е");			
+			System.out.println("РЎР»РµРґРІР°С‰Р°С‚Р° РґР°С‚Р° Рµ");			
 			System.out.printf("%02d.%02d.%02d",day,month,year);
 		}else {
-			System.out.println("Невалидна дата");
+			System.out.println("РќРµРІР°Р»РёРґРЅР° РґР°С‚Р°");
 		}
 	}
 }

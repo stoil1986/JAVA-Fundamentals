@@ -5,35 +5,23 @@ public class Task7 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Въведете сума пари:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ СЃСѓРјР° РїР°СЂРё:");
 		float money = sc.nextFloat();
-		System.out.println("Въведете \"true\" за здрав или \"false\" за болен:");
+		System.out.println("Р’СЉРІРµРґРµС‚Рµ \"true\" Р·Р° Р·РґСЂР°РІ РёР»Рё \"false\" Р·Р° Р±РѕР»РµРЅ:");
 		Boolean isHealthy = sc.nextBoolean();
 		if (!isHealthy) {
 			if (money > 10) {
-				System.out.println("Ще си купя лекарства");
+				System.out.println("Р©Рµ СЃРё РєСѓРїСЏ Р»РµРєР°СЂСЃС‚РІР°");
 			} else {
-				System.out.println("Ще пия чай");
+				System.out.println("Р©Рµ РїРёСЏ С‡Р°Р№");
 			}
 		}else {
 			if (money > 10) {
-				System.out.println("Ще отида на кино с приятел");
+				System.out.println("Р©Рµ РѕС‚РёРґР° РЅР° РєРёРЅРѕ СЃ РїСЂРёСЏС‚РµР»");
 			} else {
-				System.out.println("Ще изляза да се разходя");
+				System.out.println("Р©Рµ РёР·Р»СЏР·Р° РґР° СЃРµ СЂР°Р·С…РѕРґСЏ");
 			}
 		}
 	}
 
 }
-
-// else {
-// System.out.println("Няма да излизам");
-// }
-// if (money > 0) {
-// System.out.println("Ще си купя лекарства");
-// if (money < 10) {
-// System.out.println("Ще отида на кафе");
-// }
-// }else {
-// System.out.println("Ще стоя вкъщи и ще пия чай");
-// }
