@@ -7,7 +7,7 @@ public class Task13 {
 		System.out.println("Въведете температура в градус Целзий в интервал[-100..100]:");
 		int t = sc.nextInt();
 		if (t < -100 || t > 100) {
-			System.out.println("Въведената температуара е извън този интервал!");
+			System.out.println("Въведената температуара е извън този интервал");
 		} else {
 			if (t < -20) {
 				System.out.println("ледено студено");
