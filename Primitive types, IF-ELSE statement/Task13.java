@@ -4,21 +4,21 @@ public class Task13 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Въведете температура в градус Целзий в интервал[-100..100]:");
+		System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ[-100..100]:");
 		int t = sc.nextInt();
 		if (t < -100 || t > 100) {
-			System.out.println("Въведената температуара е извън този интервал");
+			System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 		} else {
 			if (t < -20) {
-				System.out.println("ледено студено");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 			} else if (t >= -20 && t < 0) {
-				System.out.println("студено");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅСЃС‚Рѕ");
 			} else if (t >= 0 && t <= 15) {
-				System.out.println("хладно");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ");
 			} else if (t > 15 && t <= 25) {
-				System.out.println("топло");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅ");
 			} else {
-				System.out.println("горещо");
+				System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ");
 			}
 		}
 	}
