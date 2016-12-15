@@ -1,1 +1,1 @@
-# JAVA-Fundamentals 
+# JAVA-Fundamentals IT Talents course
