@@ -26,7 +26,7 @@ public class MorskiShah {
 		System.out.println("Може да избирате между \"Х\" и \"О\"");
 		char player1 = sc.nextLine().charAt(0);
 		while (player1 != 'X' && player1 != 'O') {
-			System.out.println("Въведи \"X\"  или \"O\" бе ИГРАЧ !!!");
+			System.out.println("Въведи \"X\"  или \"O\" ");
 		    player1 = sc.nextLine().charAt(0);
 		}
 		char player2 = player1 == 'X' ? 'O' : 'X';
@@ -41,7 +41,7 @@ public class MorskiShah {
 			int realRow = row;
 			int realCol = col;
 			while (!(row >= 1 && row <= 3)) {
-				System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+				System.out.println("Координатите не са между 1 и 3, пробвай пак");
 			    row = sc.nextInt();
 			}			
 			if (row == 1) {
@@ -51,7 +51,7 @@ public class MorskiShah {
 				realRow = 4;
 			}		    
 			while (col < 1 || col > 3) {
-				System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+				System.out.println("Координатите не са между 1 и 3, пробвай пак");
 			    col = sc.nextInt();
 			}
 			if (col == 1) {
@@ -93,12 +93,12 @@ public class MorskiShah {
 			for (int i = 0; i < map.length; i++) {				
 				if ((map[i][0] == player1 && map[i][0] == map[i][2] && map[i][2] == map[i][4])
 						||(map[0][i] == player1 && map[0][i] == map[2][i] && map[2][i] == map[4][i])){  
-					System.out.println("Бати късметлията, YOU WIN\n"); 
+					System.out.println("You WIN\n"); 
 					end = true;
 					break;						 						 				     		 					 
 				}else if ((map[i][0] == player2 && map[i][0] == map[i][2] && map[i][2] == map[i][4])
 						||(map[0][i] == player2 && map[0][i] == map[2][i] && map[2][i] == map[4][i])){ 
-					System.out.println("LOOSER, Тъпия бот те победи\n"); 
+					System.out.println("You LOSE\n"); 
 					end = true;
 					break; 				 	
 				}													 
@@ -106,11 +106,11 @@ public class MorskiShah {
 			
 			if ((map[0][0] == player1 && map[0][0] == map[2][2] && map[2][2] == map[4][4])
 					||(map[4][0] == player1 && map[4][0] == map[2][2] && map[2][2] == map[0][4])){  
-				System.out.println("Бати късметлията, YOU WIN\n"); 				
+				System.out.println("You WIN\n"); 				
 				end = true;
 			}else if((map[0][0] == player2 && map[0][0] == map[2][2] && map[2][2] == map[4][4])
 					||(map[4][0] == player2 && map[4][0] == map[2][2] && map[2][2] == map[0][4])){
-				System.out.println("LOOSER, Тъпия бот те победи\n"); 				
+				System.out.println("You LOSE\n"); 				
 				end = true;
 			}
 // Print the map
@@ -160,7 +160,7 @@ public class MorskiShah {
 //		System.out.println("Може да избирате между \"Х\" и \"О\"");
 //		char player1 = sc.nextLine().charAt(0);
 //		while (player1 != 'X' && player1 != 'O') {
-//			System.out.println("Въведи \"X\"  или \"O\" бе ИГРАЧ !!!");
+//			System.out.println("Въведи \"X\"  или \"O\"");
 //		    player1 = sc.nextLine().charAt(0);
 //		}
 //		char player2 = player1 == 'X' ? 'O' : 'X';
@@ -175,7 +175,7 @@ public class MorskiShah {
 //			int realCol = col;
 //			counter++;
 //			while (row < 1 || row > 3) {
-//				System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+//				System.out.println("Координатите не са между 1 и 3, пробвай пак");
 //			    row = sc.nextInt();
 //			}			
 //			if (row == 1) {
@@ -185,7 +185,7 @@ public class MorskiShah {
 //				realRow = 4;
 //			}		    
 //			while (col < 1 || col > 3) {
-//				System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+//				System.out.println("Координатите не са между 1 и 3, пробвай пак");
 //			    col = sc.nextInt();
 //			}
 //			if (col == 1) {
@@ -212,14 +212,14 @@ public class MorskiShah {
 //			for (int i = 0; i < map.length; i++) {				
 //				if ((map[i][0] == player1 && map[i][0] == map[i][2] && map[i][2] == map[i][4])
 //						||(map[0][i] == player1 && map[0][i] == map[2][i] && map[2][i] == map[4][i])){  
-//					System.out.println("Бати късметлията, Player1 WINS\n");  
+//					System.out.println("Player1 WINS\n");  
 //					end = true;
 //					break;						 						 				     		 					 
 //				}													 
 //			}
 //			if ((map[0][0] == player1 && map[0][0] == map[2][2] && map[2][2] == map[4][4])
 //					||(map[4][0] == player1 && map[4][0] == map[2][2] && map[2][2] == map[0][4])){  
-//				System.out.println("Бати късметлията, Player1 WINS\n"); 				
+//				System.out.println("Player1 WINS\n"); 				
 //				end = true;
 //			}
 //			if (end) {
@@ -235,7 +235,7 @@ public class MorskiShah {
 //				int enemyRealRow = row1;
 //				int enemyRealCol = col1;
 //				while (row1 < 1 || row1 > 3) {
-//					System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+//					System.out.println("Координатите не са между 1 и 3, пробвай пак");
 //				    row1 = sc.nextInt();
 //				}			
 //				if (row1 == 1) {
@@ -245,7 +245,7 @@ public class MorskiShah {
 //					enemyRealRow = 4;
 //				}		    
 //				while (col1 < 1 || col1 > 3) {
-//					System.out.println("Абе аз на кой говоря, казах между 1 и 3");
+//					System.out.println("Координатите не са между 1 и 3, пробвай пак");
 //				    col1 = sc.nextInt();
 //				}
 //				if (col1 == 1) {
@@ -268,7 +268,7 @@ public class MorskiShah {
 //			for (int i = 0; i < map.length; i++) {				
 //				 if ((map[i][0] == player2 && map[i][0] == map[i][2] && map[i][2] == map[i][4])
 //						||(map[0][i] == player2 && map[0][i] == map[2][i] && map[2][i] == map[4][i])){ 
-//					System.out.println("Бати късметлията, Player2 WINS\n"); 
+//					System.out.println("Player2 WINS\n"); 
 //					end = true;
 //					break; 				 	
 //				}													 
@@ -276,7 +276,7 @@ public class MorskiShah {
 //						 
 //			if((map[0][0] == player2 && map[0][0] == map[2][2] && map[2][2] == map[4][4])
 //					||(map[4][0] == player2 && map[4][0] == map[2][2] && map[2][2] == map[0][4])){
-//				System.out.println("Бати късметлията, Player2 WINS\n"); 				
+//				System.out.println("Player2 WINS\n"); 				
 //				end = true;
 //			}
 //// Print the map
